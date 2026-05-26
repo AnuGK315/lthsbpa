@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LT BPA | Lebanon Trail High School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="LT BPA home">LT BPA</a>
+    <input class="nav-check" type="checkbox" id="nav-check" aria-label="Toggle navigation">
+    <label class="menu-toggle" for="nav-check" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="competitions.html">Competitions</a>
+      <a href="officers.html">Officers</a>
+      <a class="portal-link" href="mailto:ingalls@friscoisd.org">Member Portal</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <div class="architecture-lines"></div>
+      </div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Lebanon Trail High School</p>
+        <h1>LT BPA</h1>
+        <p class="hero-copy">Empowering future business professionals through competition, leadership, service, and practical career experience.</p>
+        <div class="hero-actions">
+          <a class="button gold" href="mailto:ingalls@friscoisd.org">Join the Chapter</a>
+          <a class="button ghost" href="competitions.html">Explore Competitions</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section events page-home-events">
+      <div class="section-heading reveal">
+        <h2>Upcoming Events</h2>
+        <p>Track chapter milestones, meetings, and conference dates throughout the school year.</p>
+      </div>
+      <div class="events-layout">
+        <!-- CALENDAR_SYNC_START -->
+        <div class="calendar-shell event-manager reveal">
+          <input class="view-radio" type="radio" name="calendar-view" id="view-month" checked>
+          <input class="view-radio" type="radio" name="calendar-view" id="view-list">
+          <input class="month-radio" type="radio" name="calendar-month" id="calendar-prev">
+          <input class="month-radio" type="radio" name="calendar-month" id="calendar-current" checked>
+          <input class="month-radio" type="radio" name="calendar-month" id="calendar-next">
+          <div class="event-manager-top">
+            <div>
+              <p class="calendar-kicker">Chapter Calendar</p>
+              <h3>
+                <span class="month-title prev-title">April 2026</span>
+                <span class="month-title current-title">May 2026</span>
+                <span class="month-title next-title">June 2026</span>
+              </h3>
+            </div>
+            <div class="calendar-actions" aria-label="Calendar month controls">
+              <label class="icon-button" for="calendar-prev" aria-label="Previous month">&lt;</label>
+              <label class="today-button" for="calendar-current">Current Month</label>
+              <label class="icon-button" for="calendar-next" aria-label="Next month">&gt;</label>
+            </div>
+          </div>
+
+          <div class="calendar-toolbar">
+            <div class="search-field">
+              <span aria-hidden="true">Search</span>
+              <input type="search" placeholder="Static search field" aria-label="Search events">
+            </div>
+            <div class="view-toggle" aria-label="Calendar view">
+              <label for="view-month">Month</label>
+              <label for="view-list">List</label>
+            </div>
+            <details class="filter-menu">
+              <summary>Filters</summary>
+              <div class="filter-panel">
+                <label class="filter-chip tomato"><input class="category-filter" id="filter-meetings" type="checkbox"> Meetings</label>
+                <label class="filter-chip tangerine"><input class="category-filter" id="filter-events" type="checkbox"> Events</label>
+                <label class="filter-chip sage"><input class="category-filter" id="filter-conferences" type="checkbox"> Conferences</label>
+                <label class="filter-chip peacock"><input class="category-filter" id="filter-deadlines" type="checkbox"> Deadlines</label>
+              </div>
+            </details>
+          </div>
+
+          <div class="month-view">
+            <div class="month-panel prev-panel" aria-label="April 2026 month calendar">
+              <div class="weekday">Sun</div><div class="weekday">Mon</div><div class="weekday">Tue</div><div class="weekday">Wed</div><div class="weekday">Thu</div><div class="weekday">Fri</div><div class="weekday">Sat</div>
+              <div class="calendar-day muted"><span>29</span></div>
+              <div class="calendar-day muted"><span>30</span></div>
+              <div class="calendar-day muted"><span>31</span></div>
+              <div class="calendar-day"><span>1</span></div>
+              <div class="calendar-day"><span>2</span></div>
+              <div class="calendar-day"><span>3</span></div>
+              <div class="calendar-day"><span>4</span></div>
+              <div class="calendar-day"><span>5</span></div>
+              <div class="calendar-day"><span>6</span></div>
+              <div class="calendar-day"><span>7</span></div>
+              <div class="calendar-day"><span>8</span></div>
+              <div class="calendar-day"><span>9</span></div>
+              <div class="calendar-day"><span>10</span></div>
+              <div class="calendar-day"><span>11</span></div>
+              <div class="calendar-day"><span>12</span></div>
+              <div class="calendar-day"><span>13</span></div>
+              <div class="calendar-day"><span>14</span></div>
+              <div class="calendar-day"><span>15</span></div>
+              <div class="calendar-day"><span>16</span></div>
+              <div class="calendar-day"><span>17</span></div>
+              <div class="calendar-day"><span>18</span></div>
+              <div class="calendar-day"><span>19</span></div>
+              <div class="calendar-day"><span>20</span></div>
+              <div class="calendar-day"><span>21</span></div>
+              <div class="calendar-day"><span>22</span></div>
+              <div class="calendar-day"><span>23</span></div>
+              <div class="calendar-day"><span>24</span></div>
+              <div class="calendar-day"><span>25</span></div>
+              <div class="calendar-day"><span>26</span></div>
+              <div class="calendar-day"><span>27</span></div>
+              <div class="calendar-day"><span>28</span></div>
+              <div class="calendar-day"><span>29</span></div>
+              <div class="calendar-day"><span>30</span></div>
+              <div class="calendar-day muted"><span>1</span></div>
+              <div class="calendar-day muted"><span>2</span></div>
+            </div>
+            <div class="month-panel current-panel" aria-label="May 2026 month calendar">
+              <div class="weekday">Sun</div><div class="weekday">Mon</div><div class="weekday">Tue</div><div class="weekday">Wed</div><div class="weekday">Thu</div><div class="weekday">Fri</div><div class="weekday">Sat</div>
+              <div class="calendar-day muted"><span>26</span></div>
+              <div class="calendar-day muted"><span>27</span></div>
+              <div class="calendar-day muted"><span>28</span></div>
+              <div class="calendar-day muted"><span>29</span></div>
+              <div class="calendar-day muted"><span>30</span></div>
+              <div class="calendar-day"><span>1</span></div>
+              <div class="calendar-day"><span>2</span></div>
+              <div class="calendar-day"><span>3</span></div>
+              <div class="calendar-day"><span>4</span></div>
+              <div class="calendar-day"><span>5</span></div>
+              <div class="calendar-day"><span>6</span></div>
+              <div class="calendar-day"><span>7</span></div>
+              <div class="calendar-day"><span>8</span></div>
+              <div class="calendar-day"><span>9</span></div>
+              <div class="calendar-day"><span>10</span></div>
+              <div class="calendar-day"><span>11</span></div>
+              <div class="calendar-day"><span>12</span></div>
+              <div class="calendar-day"><span>13</span></div>
+              <div class="calendar-day"><span>14</span></div>
+              <div class="calendar-day"><span>15</span></div>
+              <div class="calendar-day"><span>16</span></div>
+              <div class="calendar-day"><span>17</span></div>
+              <div class="calendar-day"><span>18</span></div>
+              <div class="calendar-day"><span>19</span></div>
+              <div class="calendar-day"><span>20</span></div>
+              <div class="calendar-day"><span>21</span></div>
+              <div class="calendar-day"><span>22</span></div>
+              <div class="calendar-day"><span>23</span></div>
+              <div class="calendar-day"><span>24</span></div>
+              <div class="calendar-day"><span>25</span></div>
+              <div class="calendar-day"><span>26</span></div>
+              <div class="calendar-day"><span>27</span></div>
+              <div class="calendar-day"><span>28</span></div>
+              <div class="calendar-day"><span>29</span></div>
+              <div class="calendar-day"><span>30</span></div>
+              <div class="calendar-day"><span>31</span></div>
+              <div class="calendar-day muted"><span>1</span></div>
+              <div class="calendar-day muted"><span>2</span></div>
+              <div class="calendar-day muted"><span>3</span></div>
+              <div class="calendar-day muted"><span>4</span></div>
+              <div class="calendar-day muted"><span>5</span></div>
+              <div class="calendar-day muted"><span>6</span></div>
+            </div>
+            <div class="month-panel next-panel" aria-label="June 2026 month calendar">
+              <div class="weekday">Sun</div><div class="weekday">Mon</div><div class="weekday">Tue</div><div class="weekday">Wed</div><div class="weekday">Thu</div><div class="weekday">Fri</div><div class="weekday">Sat</div>
+              <div class="calendar-day muted"><span>31</span></div>
+              <div class="calendar-day"><span>1</span></div>
+              <div class="calendar-day"><span>2</span></div>
+              <div class="calendar-day"><span>3</span></div>
+              <div class="calendar-day"><span>4</span></div>
+              <div class="calendar-day"><span>5</span></div>
+              <div class="calendar-day"><span>6</span></div>
+              <div class="calendar-day"><span>7</span></div>
+              <div class="calendar-day"><span>8</span></div>
+              <div class="calendar-day"><span>9</span></div>
+              <div class="calendar-day"><span>10</span></div>
+              <div class="calendar-day"><span>11</span></div>
+              <div class="calendar-day"><span>12</span></div>
+              <div class="calendar-day"><span>13</span></div>
+              <div class="calendar-day"><span>14</span></div>
+              <div class="calendar-day"><span>15</span></div>
+              <div class="calendar-day featured-day"><span>16</span><a class="calendar-event cat-events" href="#test-maybe-20260616">test maybe?</a></div>
+              <div class="calendar-day"><span>17</span></div>
+              <div class="calendar-day"><span>18</span></div>
+              <div class="calendar-day"><span>19</span></div>
+              <div class="calendar-day"><span>20</span></div>
+              <div class="calendar-day"><span>21</span></div>
+              <div class="calendar-day"><span>22</span></div>
+              <div class="calendar-day"><span>23</span></div>
+              <div class="calendar-day"><span>24</span></div>
+              <div class="calendar-day"><span>25</span></div>
+              <div class="calendar-day"><span>26</span></div>
+              <div class="calendar-day"><span>27</span></div>
+              <div class="calendar-day"><span>28</span></div>
+              <div class="calendar-day"><span>29</span></div>
+              <div class="calendar-day"><span>30</span></div>
+              <div class="calendar-day muted"><span>1</span></div>
+              <div class="calendar-day muted"><span>2</span></div>
+              <div class="calendar-day muted"><span>3</span></div>
+              <div class="calendar-day muted"><span>4</span></div>
+            </div>
+          </div>
+
+          <div class="calendar-list-view" id="calendar-list" aria-label="Calendar event list">
+            <article class="calendar-list-event cat-events" id="test-maybe-20260616"><span class="event-dot tangerine-dot"></span><div><h4>test maybe?</h4><p>Jun 16 | 5:30 PM - 6:30 PM | Ingall&#x27;s room A202</p></div></article>
+          </div>
+        </div>
+        <!-- CALENDAR_SYNC_END -->
+        <div class="milestones reveal">
+          <!-- MILESTONES_SYNC_START -->
+          <article class="featured"><time><span>Jun</span>16</time><div><h3>test maybe?</h3><p>Jun 16 | 5:30 PM - 6:30 PM | Ingall&#x27;s room A202</p></div></article>
+          <!-- MILESTONES_SYNC_END -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>LT BPA</strong>
+    <p>&copy; 2026 Lebanon Trail High School BPA. All Rights Reserved.</p>
+    <nav aria-label="Footer navigation">
+      <a href="about.html">Contact Us</a>
+      <a href="competitions.html">Competitions</a>
+      <a href="https://bpa.org/">National BPA</a>
+    </nav>
+  </footer>
+</body>
+</html>
