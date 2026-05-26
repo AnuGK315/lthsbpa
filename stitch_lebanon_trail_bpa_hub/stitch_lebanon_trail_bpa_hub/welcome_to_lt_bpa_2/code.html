@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LT BPA - Lebanon Trail High School</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary": "#ffffff",
+                      "secondary-fixed": "#ffdea5",
+                      "inverse-on-surface": "#f0f1f2",
+                      "forest-deep": "#1B4D3E",
+                      "on-primary-container": "#8abda9",
+                      "primary-fixed": "#baeed9",
+                      "secondary-container": "#fed488",
+                      "on-secondary-container": "#785a1a",
+                      "on-tertiary-container": "#a8b2c8",
+                      "tertiary-container": "#3b4557",
+                      "surface-dim": "#d9dadb",
+                      "secondary": "#775a19",
+                      "outline": "#707974",
+                      "on-surface": "#191c1d",
+                      "on-surface-variant": "#404945",
+                      "on-error-container": "#93000a",
+                      "surface-container-highest": "#e1e3e4",
+                      "on-tertiary-fixed": "#121c2c",
+                      "on-secondary": "#ffffff",
+                      "primary-container": "#1b4d3e",
+                      "champagne-gold": "#C5A059",
+                      "error-container": "#ffdad6",
+                      "primary": "#003629",
+                      "surface-bright": "#f8f9fa",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed": "#002117",
+                      "tertiary-fixed-dim": "#bdc7dc",
+                      "inverse-primary": "#9ed1bd",
+                      "surface-container-high": "#e7e8e9",
+                      "surface": "#f8f9fa",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-variant": "#e1e3e4",
+                      "surface-tint": "#376757",
+                      "paper-white": "#FFFFFF",
+                      "on-tertiary-fixed-variant": "#3d4759",
+                      "background": "#f8f9fa",
+                      "on-secondary-fixed": "#261900",
+                      "secondary-fixed-dim": "#e9c176",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed-variant": "#5d4201",
+                      "slate-navy": "#2D3748",
+                      "on-primary-fixed-variant": "#1d4f40",
+                      "primary-fixed-dim": "#9ed1bd",
+                      "tertiary-fixed": "#d9e3f9",
+                      "on-background": "#191c1d",
+                      "inverse-surface": "#2e3132",
+                      "outline-variant": "#c0c9c3",
+                      "tertiary": "#252f3f",
+                      "on-error": "#ffffff",
+                      "surface-container-low": "#f3f4f5",
+                      "graphite": "#4A5568",
+                      "surface-container": "#edeeef"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "margin-desktop": "48px",
+                      "gutter": "24px",
+                      "margin-mobile": "16px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Montserrat"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "headline-xl": [
+                              "Montserrat"
+                      ],
+                      "headline-md": [
+                              "Montserrat"
+                      ],
+                      "headline-lg-mobile": [
+                              "Montserrat"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.surface');
+            color: theme('colors.on-surface');
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<style>
+            @keyframes fadeUp {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        </style></head>
+<body class="flex flex-col min-h-screen">
+<!-- TopNavBar Shared Component -->
+<nav class="fixed top-0 w-full z-50 bg-surface dark:bg-inverse-surface border-b-0 shadow-none transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-16">
+<!-- Brand -->
+<a class="text-headline-md font-headline-md font-bold text-forest-deep dark:text-inverse-primary transition-transform duration-200 ease-in-out hover:scale-95 active:opacity-80" href="#">
+                LT BPA
+            </a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-label-md font-label-md text-champagne-gold dark:text-secondary-fixed border-b-2 border-champagne-gold pb-1 transition-colors duration-200 ease-in-out scale-95 active:opacity-80" href="#">Home</a>
+<a class="text-label-md font-label-md text-on-surface-variant dark:text-surface-variant hover:text-forest-deep dark:hover:text-primary-fixed-dim transition-colors duration-200 ease-in-out scale-95 active:opacity-80" href="#">About</a>
+<a class="text-label-md font-label-md text-on-surface-variant dark:text-surface-variant hover:text-forest-deep dark:hover:text-primary-fixed-dim transition-colors duration-200 ease-in-out scale-95 active:opacity-80" href="#">Competitions</a>
+<a class="text-label-md font-label-md text-on-surface-variant dark:text-surface-variant hover:text-forest-deep dark:hover:text-primary-fixed-dim transition-colors duration-200 ease-in-out scale-95 active:opacity-80" href="#">Join</a>
+<a class="text-label-md font-label-md text-on-surface-variant dark:text-surface-variant hover:text-forest-deep dark:hover:text-primary-fixed-dim transition-colors duration-200 ease-in-out scale-95 active:opacity-80" href="#">Events</a>
+</div>
+<!-- Trailing Action -->
+<div class="hidden md:block">
+<a class="inline-flex items-center justify-center px-4 py-2 bg-forest-deep text-on-primary text-label-md font-label-md rounded transition-colors hover:bg-primary-container" href="#">
+                    Member Portal
+                </a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-forest-deep p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden pt-16">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Modern office building architecture" class="w-full h-full object-cover" data-alt="A sweeping, low-angle shot of a highly modern, premium corporate glass building reflecting a clear sky. The setting conveys ambition, prestige, and structure, aligning with a corporate-collegiate aesthetic. The lighting is bright and natural, emphasizing clean lines and crisp architectural details. The overall color palette leans heavily into sophisticated, deep cool tones contrasting with bright, airy reflections, creating a professional and refined mood suitable for a high-end business organization." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpk8LIhXX5FVdRTMnUsMjDCwEj_eFfwmvWuA_IQ0_9s6GNGRwTnveCpdqGE7DRH3Uyi5UgyH005UMTpa0ToFbIX6NhvN4-m2BAn3dLrTuMGkZqIW7FHj--3snqu1jyBxjyIh_oZiQaCEFM1mrtMW_ZVfmvYI30sWeFEQJAFUBfeU7v_TQEIrtqgnxtIC4HCZKjOEPz08EpY_dMdtar5FGTDCox5OFlORZj8_jLEQ5KZN6Lo5Xnyft7z-7cKUzKdR3LjdG8g5MCExY"/>
+<!-- Overlay Gradient -->
+<div class="absolute inset-0 bg-gradient-to-r from-forest-deep/80 to-slate-navy/60 mix-blend-multiply"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col items-center">
+<h1 class="text-headline-xl font-headline-xl text-on-primary mb-6 drop-shadow-lg opacity-0 translate-y-4 animate-fade-up" style="animation: fadeUp 0.8s ease-out forwards;">
+                    LT BPA
+                </h1>
+<p class="text-body-lg font-body-lg text-surface-bright max-w-2xl mx-auto mb-8 opacity-0 translate-y-4 animate-fade-up" style="animation: fadeUp 0.8s ease-out 0.2s forwards;">
+                    Empowering the next generation of business professionals through competitive excellence, leadership development, and structural integrity.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 opacity-0 translate-y-4 animate-fade-up" style="animation: fadeUp 0.8s ease-out 0.4s forwards;">
+<a class="px-8 py-3 bg-champagne-gold text-on-secondary-fixed text-label-md font-label-md rounded shadow-sm hover:shadow-md transition-all hover:bg-secondary-fixed-dim" href="#">
+                        Join the Chapter
+                    </a>
+<a class="px-8 py-3 border border-on-primary text-on-primary text-label-md font-label-md rounded hover:bg-on-primary/10 transition-colors" href="#">
+                        Explore Competitions
+                    </a>
+</div>
+</div>
+</section>
+<!-- Bento Grid Feature Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto bg-surface">
+<div class="mb-16">
+<h2 class="text-headline-lg font-headline-lg text-forest-deep mb-4">Upcoming Events</h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-3xl">Stay updated with our chapter's schedule. Sync with your personal calendar to never miss a milestone.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Calendar Placeholder -->
+<div class="lg:col-span-8 bg-paper-white rounded-xl border border-slate-navy/10 overflow-hidden flex flex-col">
+<div class="bg-forest-deep p-4 text-on-primary flex justify-between items-center">
+<span class="font-label-md">Chapter Calendar</span>
+<button class="flex items-center text-label-sm hover:text-champagne-gold transition-colors">
+<span class="material-symbols-outlined mr-2 text-base">sync</span>
+                    Sync to Google Calendar
+                </button>
+</div>
+<div class="flex-grow min-h-[400px] bg-surface-container-lowest flex flex-col items-center justify-center p-8 text-center">
+<div class="w-20 h-20 rounded-full bg-surface-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-4xl text-outline">calendar_month</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant">Interactive Calendar Placeholder</p>
+<p class="text-label-sm text-outline mt-2">Embedded Google Calendar (2025-2026 School Year) will appear here</p>
+</div>
+</div>
+<!-- Key Dates List -->
+<div class="lg:col-span-4 flex flex-col gap-4">
+<h3 class="text-label-md font-label-md text-forest-deep uppercase tracking-wider mb-2 px-1">Key Milestones</h3>
+<!-- Event Card 1 -->
+<div class="bg-paper-white p-4 rounded-xl border border-slate-navy/10 flex gap-4 hover:shadow-sm transition-shadow">
+<div class="flex flex-col items-center justify-center bg-secondary-container/30 rounded px-3 py-2 h-fit min-w-[60px]">
+<span class="text-label-sm text-secondary font-bold uppercase">Feb</span>
+<span class="text-headline-md text-forest-deep leading-none">24</span>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="text-label-md font-label-md text-forest-deep leading-tight mb-1">Regional Leadership Conference</h4>
+<p class="text-label-sm text-on-surface-variant">9:00 AM - 5:00 PM</p>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="bg-paper-white p-4 rounded-xl border border-slate-navy/10 flex gap-4 hover:shadow-sm transition-shadow">
+<div class="flex flex-col items-center justify-center bg-primary-fixed/20 rounded px-3 py-2 h-fit min-w-[60px]">
+<span class="text-label-sm text-forest-deep font-bold uppercase">Mar</span>
+<span class="text-headline-md text-forest-deep leading-none">12</span>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="text-label-md font-label-md text-forest-deep leading-tight mb-1">Monthly Chapter Meeting</h4>
+<p class="text-label-sm text-on-surface-variant">4:30 PM @ Library</p>
+</div>
+</div>
+<!-- Event Card 3 -->
+<div class="bg-forest-deep p-4 rounded-xl flex gap-4 shadow-md">
+<div class="flex flex-col items-center justify-center bg-champagne-gold rounded px-3 py-2 h-fit min-w-[60px]">
+<span class="text-label-sm text-on-secondary-fixed font-bold uppercase">May</span>
+<span class="text-headline-md text-on-secondary-fixed leading-none">08</span>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="text-label-md font-label-md text-on-primary leading-tight mb-1">State Leadership Conference</h4>
+<p class="text-label-sm text-primary-fixed">Dallas, TX - Multiple Days</p>
+</div>
+</div>
+<button class="mt-4 w-full py-3 border border-outline/30 text-forest-deep text-label-md font-label-md rounded hover:bg-surface-container transition-colors">
+                View All Events
+            </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-surface-container-high dark:bg-surface-container-low mt-auto">
+<div class="w-full py-12 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-base">
+<!-- Brand/Copyright -->
+<div class="text-label-md font-headline-md text-forest-deep dark:text-primary-fixed-dim">
+<span class="text-body-md font-body-md text-forest-deep dark:text-primary-fixed-dim opacity-90 hover:opacity-100">
+                    © 2024 Lebanon Trail High School BPA. All Rights Reserved.
+                </span>
+</div>
+<!-- Links -->
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-surface-variant hover:text-champagne-gold dark:hover:text-secondary-fixed transition-colors" href="#">Contact Us</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-surface-variant hover:text-champagne-gold dark:hover:text-secondary-fixed transition-colors" href="#">Terms of Service</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-surface-variant hover:text-champagne-gold dark:hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-surface-variant hover:text-champagne-gold dark:hover:text-secondary-fixed transition-colors" href="#">National BPA</a>
+</div>
+</div>
+</footer>
+<!-- Inline script for simple animations -->
+<script>
+        // Simple keyframe injection for hero animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeUp {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-sm', 'bg-surface/95', 'backdrop-blur-sm');
+                nav.classList.remove('bg-surface');
+            } else {
+                nav.classList.remove('shadow-sm', 'bg-surface/95', 'backdrop-blur-sm');
+                nav.classList.add('bg-surface');
+            }
+        });
+    </script>
+</body></html>
