@@ -1,0 +1,32 @@
+name: Sync Google Calendar
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-calendar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Sync calendar into static HTML
+        env:
+          GOOGLE_CALENDAR_API_KEY: ${{ secrets.GOOGLE_CALENDAR_API_KEY }}
+        run: python scripts/sync_calendar.py
+
+      - name: Commit calendar update
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update synced calendar"
+          file_pattern: index.html

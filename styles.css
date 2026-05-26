@@ -416,13 +416,19 @@ h1 {
 }
 
 .officers { padding-top: 96px; }
+.advisor-row {
+  margin-bottom: 24px;
+}
+.advisor-row .advisor {
+  max-width: 760px;
+}
 .officer-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-bottom: 24px;
 }
-.officer-grid.small { grid-template-columns: repeat(3, 1fr); }
+.officer-grid.small { grid-template-columns: repeat(4, 1fr); }
 .officer {
   padding: 28px;
   text-align: center;
@@ -899,10 +905,12 @@ footer nav { display: flex; gap: 24px; color: var(--muted); font-size: .85rem; }
   .competition-hero,
   .events-layout,
   .officer-grid,
-  .officer-grid.small,
   .benefit-grid,
   .event-grid {
     grid-template-columns: 1fr;
+  }
+  .officer-grid.small {
+    grid-template-columns: repeat(2, 1fr);
   }
   .competition-hero { padding: 88px 24px; }
   .officer.wide { align-items: flex-start; }
@@ -937,6 +945,9 @@ footer nav { display: flex; gap: 24px; color: var(--muted); font-size: .85rem; }
   .button { width: 100%; }
   .officer.wide { display: block; text-align: center; }
   .officer.wide img { margin: 0 auto 16px; }
+  .officer-grid.small {
+    grid-template-columns: 1fr;
+  }
   footer { display: grid; }
   footer nav { flex-wrap: wrap; }
   .event-manager-top {

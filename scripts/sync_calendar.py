@@ -31,6 +31,27 @@ class Event:
     location: str
     description: str
     all_day: bool
+    color_id: str
+    metadata_category: str
+
+
+GOOGLE_COLOR_TO_CATEGORY = {
+    "11": "Meetings",      # Tomato
+    "6": "Events",         # Tangerine
+    "2": "Conferences",    # Sage
+    "7": "Deadlines",      # Peacock
+}
+
+CATEGORY_ALIASES = {
+    "meeting": "Meetings",
+    "meetings": "Meetings",
+    "event": "Events",
+    "events": "Events",
+    "conference": "Conferences",
+    "conferences": "Conferences",
+    "deadline": "Deadlines",
+    "deadlines": "Deadlines",
+}
 
 
 def parse_google_time(value: dict) -> tuple[datetime, bool]:
@@ -64,6 +85,12 @@ def fetch_events(api_key: str, start: datetime, end: datetime) -> list[Event]:
             continue
         start_dt, all_day = parse_google_time(item["start"])
         end_dt, _ = parse_google_time(item["end"])
+        extended = item.get("extendedProperties", {})
+        metadata_category = (
+            extended.get("private", {}).get("category")
+            or extended.get("shared", {}).get("category")
+            or ""
+        )
         events.append(
             Event(
                 title=item.get("summary", "Untitled event"),
@@ -72,6 +99,8 @@ def fetch_events(api_key: str, start: datetime, end: datetime) -> list[Event]:
                 location=item.get("location", ""),
                 description=item.get("description", ""),
                 all_day=all_day,
+                color_id=item.get("colorId", ""),
+                metadata_category=metadata_category,
             )
         )
     return events
@@ -98,6 +127,14 @@ def event_detail(event: Event) -> str:
 
 
 def event_category(event: Event) -> str:
+    explicit_category = CATEGORY_ALIASES.get(event.metadata_category.strip().lower())
+    if explicit_category:
+        return explicit_category
+
+    color_category = GOOGLE_COLOR_TO_CATEGORY.get(event.color_id)
+    if color_category:
+        return color_category
+
     text = f"{event.title} {event.description}".lower()
     if any(word in text for word in ["meeting", "chapter meeting", "sync", "check-in"]):
         return "Meetings"
